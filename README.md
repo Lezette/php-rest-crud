@@ -5,9 +5,15 @@ This exercise is focused on a blog post. Using PHP OOP, PDO with MySQL database,
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
-PHP, MySQL Databse and Postman to test the api.
-This exercise is doesn't explain php basics and sql.
+- PHP Server
+- MySQL Databse
+- Postman to test the api.
 
-## Testing
-The Database.php file in the config folder has the database connection, 
-The Models folder is contains a file where all the sql is being queried
+## Setup
+- import the `myblog.sql` file to your database server, to create the database and tables
+- The `Database.php` file contains the database connection, update with your own database credentials
+- to call apis you do the (example: using localhost), use the following link in postman
+    - get all post: `http://localhost/php_rest_crud/api/post/read.php`
+    - get a single post: `http://localhost/php_rest_crud/api/post/read_single.php?id=3`
+    - add (post request) a post: `http://localhost/php_rest_myblog/api/post/create.php`
+        - in the body tab in postman add the data in a json format
